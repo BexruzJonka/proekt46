@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Son</title>
+  <script>
+    window.onload = function () {
+
+      let randomSon = Math.floor(Math.random() * 100) + 1;
+      alert("Random orqali chiqqan son: " + randomSon);
+
+
+      let tasdiq = confirm("biz random sonni 2 ga kopaytirmoqchi va bo'lmoqchimiz !");
+      
+      if (tasdiq) {
+
+        let kopaytir = randomSon * 2;
+        let bolish = Math.floor(randomSon / 2);
+        let qoldiq = randomSon % 3;5
+
+        alert(
+          "Random orqali chiqqan son: " + randomSon + " edi\n" +
+          "biz uni 2 ga ko'paytirib " + kopaytir + " sonini chiqardik,\n" +
+          "va shu sonni 2 ga bo'lib: " + bolish + " sonini chiqardik,\n" +
+          "va shu sonni 3 ga bolgandagi qoldiq: " + qoldiq + " sonini chiqardik"
+        );
+      } else {
+        alert("Amal bekor qilindi !");
+      }
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
